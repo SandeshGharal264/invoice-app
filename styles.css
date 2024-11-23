@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Invoice Styling */
+#invoice-preview {
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#invoice-preview h4, #invoice-preview h5 {
+    margin: 10px 0;
+    color: #555;
+}
+
+#invoice-preview ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#invoice-preview ul li {
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+#invoice-preview ul li:last-child {
+    border-bottom: none;
+}
+
+/* Header Styling */
+#invoice-preview .invoice-header {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#invoice-preview .invoice-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Section Borders */
+#invoice-preview .section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Totals Styling */
+#invoice-preview .totals {
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+#invoice-preview .totals h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}

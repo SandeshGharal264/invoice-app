@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Invoice Generator</h1>
+
+        <!-- Client Details -->
+        <div class="card p-4 mb-4">
+            <h3>Client Details</h3>
+            <div class="mb-3">
+                <label for="client-name" class="form-label">Name</label>
+                <input type="text" id="client-name" class="form-control" placeholder="Enter client name" required>
+            </div>
+            <div class="mb-3">
+                <label for="client-address" class="form-label">Address</label>
+                <textarea id="client-address" class="form-control" rows="3" placeholder="Enter client address" required></textarea>
+            </div>
+        </div>
+
+        <!-- Items Section -->
+        <div class="card p-4 mb-4">
+            <h3>Items</h3>
+            <div id="item-list"></div>
+            <button id="add-item" class="btn btn-primary mt-3">Add Item</button>
+
+            <hr>
+            <h4>Additional Details</h4>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="tax-rate" class="form-label">Tax (%)</label>
+                    <input type="number" id="tax-rate" class="form-control" placeholder="Enter tax rate" step="0.01" min="0">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="discount" class="form-label">Discount ($)</label>
+                    <input type="number" id="discount" class="form-control" placeholder="Enter discount amount" step="0.01" min="0">
+                </div>
+            </div>
+        </div>
+
+        <!-- Invoice Preview -->
+        <div class="card p-4">
+            <h3>Invoice Preview</h3>
+            <div id="invoice-preview"></div>
+            <button id="print-btn" class="btn btn-success mt-3">Print Invoice</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
